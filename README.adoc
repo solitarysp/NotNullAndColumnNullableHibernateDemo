@@ -1,0 +1,9 @@
+* Link: https://www.baeldung.com/hibernate-notnull-vs-nullable
+
+* Về ý nghĩa. @NotNull và @Column(nullable = false) đều được sử dụng ddeert validate dữ liệu not null khi chúng ta call save data đến database
+
+* Sử dụng @Column(nullable = false), khi chúng sử dụng auto tạo ddl của hibernate. Hibernate thêm điều kiện not null cho vào dữ liệu cho chúng ta.
+
+== @NotNull
+
+* @NotNull khi hibernate validate data

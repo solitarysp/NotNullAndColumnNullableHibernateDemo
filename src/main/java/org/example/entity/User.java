@@ -1,0 +1,28 @@
+package org.example.entity;
+
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+import static javax.persistence.GenerationType.IDENTITY;
+
+@Data
+@Table(name = "user")
+@Entity
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
+    private int id;
+    @NotNull
+    private String firstName;
+    private String lastName;
+
+    public User() {
+    }
+
+}
